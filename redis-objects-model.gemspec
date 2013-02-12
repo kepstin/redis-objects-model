@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["calvin.walton@kepstin.ca"]
   gem.description   = %q{The simplest possible model for redis-objects}
   gem.summary       = %q{You can't use redis-objects as a model in itself, because it requires an ID attribute. So, lets add one.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/kepstin/redis-objects-model"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
