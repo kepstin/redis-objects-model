@@ -1,5 +1,7 @@
 # redis-objects-model
 
+[![Build Status](https://travis-ci.org/kepstin/redis-objects-model.png)](https://travis-ci.org/kepstin/redis-objects-model)
+
 The simplest possible Model to use with redis-objects.
 
 The minimum requirement for a class to be usable as a model with
