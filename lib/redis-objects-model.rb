@@ -19,7 +19,11 @@ class Redis
     class Model
       include Redis::Objects
 
-      counter :last_id, :global => true
+      ##
+      # The name of the redis counter which will be used to allocate keys.
+      def redis_objects_model_next_id
+        "#{self.class.redis_prefix}:next_id"
+      end
 
       ##
       # Create an instance of the model.
@@ -41,7 +45,7 @@ class Redis
       # In other words, accessing the id attribute is basically equivalent to
       # persisting the object.
       def id
-        @id || @id = last_id.increment
+        @id || @id = self.redis.incr(self.redis_objects_model_next_id)
       end
 
       #########################################################################
