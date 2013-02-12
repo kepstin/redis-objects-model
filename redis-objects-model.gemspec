@@ -17,7 +17,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  #gem.add_runtime_dependency('redis', ['~> 2.2.0'])
   gem.add_runtime_dependency('redis-objects', ['~> 0.6.0'])
   gem.add_development_dependency('fakeredis', ['~>0.4.1'])
   gem.add_development_dependency('rake')
