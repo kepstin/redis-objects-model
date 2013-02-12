@@ -1,6 +1,11 @@
-# Redis::Objects::Model
+# redis-objects-model
 
-TODO: Write a gem description
+The simplest possible Model to use with redis-objects.
+
+The minimum requirement for a class to be usable as a model with
+redis-objects is that it must provide an id attribute. So here is a
+base class that provides an id attribute - lazily yet atomically
+allocated using Redis, of course.
 
 ## Installation
 
@@ -18,7 +23,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+See the generated rdoc, or just read the documentation headers in
+lib/redis-objects-model.rb
 
 ## Contributing
 
